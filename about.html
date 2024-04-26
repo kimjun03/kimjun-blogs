@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+<script type="text/javascript">
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector(".header");
+        header.classList.toggle("sticky", window.scrollY > 0)
+    })
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navbar = document.getElementById('navbar');
+
+        burgerMenu.addEventListener('click', function () {
+            navbar.querySelector('ul').classList.toggle('show');
+        });
+    });
+
+</script>
+
+<body>
+    <section id="about-page">
+        <div class="about-container">
+            <div class="header navs">
+                <div class="burger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <h1 class="logo">MyWebsite</h1>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="profile.html">profile</a></li>
+                        <li><a href="forms.html">Log out</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h1 class="title">about me.</h1>
+                    <p class="sub-title">I'm a third year BSIT student Gingoog City Colleges.</p>
+                    <p class="description">
+                        Meet a soul whose heart beats to the rhythm of strings, a melody weaver and storyteller whose
+                        fingers dance across the fretboard with effortless grace. Born of passion and nurtured by
+                        dedication, this individual finds solace in the embrace of six strings and the resonance of
+                        wood. </p>
+
+                    <p class="description">With each strum, they breathe life into melodies that speak volumes, painting
+                        vivid landscapes of emotion and expression. Whether under the spotlight of a crowded stage or
+                        the serenity of their own sanctuary, the guitar becomes an extension of their being, a conduit
+                        through which dreams take flight and the soul finds its voice. In the hands of this musician,
+                        every chord is a journey, every note a revelation, and every song a testament to the power of
+                        music to inspire, heal, and connect.</p>
+                </div>
+                <div class="about-image">
+                    <div class="square">
+                        <img src="thinking.avif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

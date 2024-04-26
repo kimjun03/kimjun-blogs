@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+<script type="text/javascript">
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector(".header");
+        header.classList.toggle("sticky", window.scrollY > 0)
+    })
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navbar = document.getElementById('navbar');
+
+        burgerMenu.addEventListener('click', function () {
+            navbar.querySelector('ul').classList.toggle('show');
+        });
+    });
+
+</script>
+
+<body>
+    <section id="home-page">
+        <div class="home-container">
+            <div class="header">
+                <div class="burger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <h1 class="logo">MyWebsite</h1>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="forms.html">Log out</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="download.jpg" alt="" class="background">
+            <div class="hero-container">
+                <h1 class="title">Trip to Cebu</h1>
+            </div>
+        </div>
+    </section>
+    <section id="blog-section">
+        <div class="blog-container">
+            <div class="blog-content">
+                <h1 class="title-blog">Travel Blog</h1>
+                <p class="paragraph">Welcome to everyone, where I invite you to join me on a
+                    captivating journey through the lens of my adventures. As a passionate traveler, I've embarked on a
+                    quest to explore the world's wonders, one destination at a time. From the snow-capped peaks of the
+                    Himalayas to the sun-kissed shores of tropical paradises, my travels have been fueled by curiosity
+                    and a thirst for discovery."
+                </p>
+                <p class="paragraph">In these pages, I'll take you along on my exhilarating escapades, sharing tales of
+                    serendipitous encounters, awe-inspiring landscapes, and cultural immersion. Whether I'm navigating
+                    bustling markets in Marrakech or trekking through remote jungles in Southeast Asia, each experience
+                    has left an indelible mark on my journey. So, buckle up and get ready to embark on an unforgettable
+                    odyssey, where every adventure is a chapter waiting to be written, and every destination a story
+                    waiting to be told."
+                </p>
+                <div class="images">
+                    <div class="img-group">
+                        <img src="blog1-img-1.jpg" alt="" class="image">
+                    </div>
+                    <div class="img-group">
+                        <video src="video blog.mp4" controls autoplay loop muted></video>
+                    </div>
+                    <div class="img-group">
+                        <img src="blogimg2.jpg" alt="" class="image">
+                    </div>
+                </div>
+                <p class="paragraph">Picture this: a sun-drenched escape where azure waters beckon and laughter fills
+                    the air. Join me on a voyage to a secluded paradise, a destination shrouded in mystery yet brimming
+                    with excitement. As we set foot on this enchanting land, we leave behind the mundane and embrace the
+                    thrill of the unknown."
+                </p>
+                <p class="paragraph">From the moment we arrived, adventure awaited at every turn. Days were spent
+                    basking in the warmth of the tropical sun, while nights came alive with the rhythm of vibrant
+                    festivities. With each sip of exotic cocktails, we toasted to new beginnings and cherished moments
+                    shared with newfound friends. And when the heat became too much to bear, we sought refuge in the
+                    cool embrace of crystalline waters, where the cares of the world melted away in the gentle tide."
+                </p>
+
+                <div class="image-paragraph">
+                    <p class="paragraph">Come along as we delve into the heart of this hidden gem, where every corner
+                        holds a secret waiting to be discovered. Let's wander through winding streets lined with
+                        colorful bazaars, indulge in mouthwatering delicacies that tantalize the taste buds, and immerse
+                        ourselves in the rich tapestry of local culture. This is not just a journey; it's an experience
+                        of a lifetime, where memories are made and dreams come true."
+                    </p>
+                    <div class="img-group">
+                        <img src="blogimg3.jpg" alt="" class="image image-last">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section id="about-page">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1 class="title">about me.</h1>
+                    <p class="sub-title">I'm a first year BSIT student from Capitol University.</p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, totam ex!
+                        Voluptates et provident, dicta ullam vel recusandae architecto eius quidem, tenetur iure
+                        laborum. Autem placeat doloribus facilis magnam suscipit?</p>
+
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, totam ex!
+                        Voluptates et provident, dicta ullam vel recusandae architecto eius quidem, tenetur iure
+                        laborum. Autem placeat doloribus facilis magnam suscipit?</p>
+                </div>
+                <div class="about-image">
+                    <div class="square">
+                        <img src="thinking.avif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="profile-page">
+        <div class="profile-container">
+            <div class="profile-text">
+                <h1>profile</h1>
+            </div>
+            <div class="profile">
+                <div class="image">
+                    <img src="skolboi.jpg" alt="profile">
+                </div>
+                <div class="profile-details">
+                    <h4>Greetings Everyone, i am</h4>
+                    <h1>mark <br> lloyd</h1>
+                    <h3>An aspiring web developer.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia asperiores nulla ipsam laborum
+                        sapiente ratione cumque voluptates incidunt excepturi tenetur earum placeat quis tempore, beatae
+                        dolorum. Earum quibusdam delectus animi. Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Amet libero mollitia laborum, impedit est quibusdam earum numquam reiciendis beatae vitae
+                        quod tempora repellat expedita deleniti eos hic omnis praesentium explicabo?</p>
+                    <div class="profile-info">
+                        <h3><i class="fa fa-calendar"></i>21st march, 2003</h3>
+                        <h3><i class="fa fa-phone"></i>+6397-000-9169</h3>
+                        <h3><i class="fa fa-map-marker"></i>Location nimo bai.</h3>
+                        <h3><i class="fa fa-certificate"></i>Study at Capitol University</h3>
+                        <h3><i class="fa fa-book"></i>Bachelor Science in Information Technology.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section-->
+</body>
+
+</html>

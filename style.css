@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background: #27374D;
+}
+
+#home-page{
+    height: 100%;
+}
+
+.home-container{
+    padding: 2rem 10rem;
+}
+
+/*.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header .logo{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #19A7CE;
+}
+.header ul{
+    display: flex;
+    gap: 4rem;
+}
+
+.header ul li{
+    list-style: none;
+}
+
+.header ul li a, .logout{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #19A7CE;
+}
+
+.header ul li a:hover, .logout{
+    color: #EEEEEE;
+}
+
+.navs ul li a, .logout{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #27374D;
+}
+
+.navs ul li a:hover, .logout{
+    color: #19A7CE;
+}*/
+.header{
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.header .logo{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #19A7CE;
+}
+
+.header i{
+    margin-right: 10px;
+}
+
+
+#navbar ul{
+    display: flex;
+    gap: 4rem;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a, .logout{
+    position: relative;
+   font-weight: 300;
+   font-size: 0.9rem;
+   text-decoration: none;
+   color: #19A7CE;
+   letter-spacing: 1px;
+   transition: 0.5s ease;
+   text-transform: uppercase;
+}
+#navbar ul li a:hover{
+    color: #EEEEEE;
+}
+
+#navbar ul li a .active{
+    color: #EEEEEE;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #19A7CE;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    #home-page{
+        
+        height: 100vh;
+    }
+    
+    .home-container{
+        padding: 2rem;
+    }
+    .burger-menu {
+        display: flex;
+        z-index: 1;
+
+    }
+
+    .logo{
+        display: none;
+    }
+
+    #navbar ul {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(2, 36, 60, 0.8);
+        padding: 20px;
+        box-sizing: border-box;
+        z-index: 999;
+    }
+
+    #navbar ul.show {
+        display: flex;
+    }
+
+    #navbar ul li {
+        margin-bottom: 10px;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .burger-menu {
+        display: flex;
+        z-index: 1;
+
+    }
+
+    .logo{
+        display: none;
+    }
+
+    #navbar ul {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(2, 36, 60, 0.8);
+        padding: 20px;
+        box-sizing: border-box;
+        z-index: 999;
+    }
+
+    #navbar ul.show {
+        display: flex;
+    }
+
+    #navbar ul li {
+        margin-bottom: 10px;
+    }
+
+}
+
+.home-content{
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero .greet{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #19A7CE;
+}
+
+.hero .title{
+    text-transform: capitalize;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #EEEEEE;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.hero .sub-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #EEEEEE;
+    text-align: left;
+    letter-spacing: 0.3px;
+}
+
+.socials ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.socials ul li{
+    list-style: none;
+ }
+ 
+ .socials ul li a{
+     text-decoration: none;
+     font-size: 1rem;
+     font-weight: 500;
+     color: #EEEEEE;
+     text-transform: uppercase;
+     position: relative;
+ }
+ 
+ .socials ul li a .fa{
+     font-size: 1.5rem;
+     text-align: center;
+     height: 45px;
+     width: 45px;
+     background:#EEEEEE;
+     color: #27374D;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: all 0.3s 100ms;
+ }
+
+ .socials ul li a .fa:hover{
+    color: #19A7CE;
+}
+
+.circle{
+    position: relative;
+    height: 450px;
+    width: 450px;
+    background: #19A7CE;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle img{
+   width: 100%;
+}
+@media screen and (max-width: 768px){
+    .home-content{
+        padding: 5rem 0;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    
+    .hero{
+        width: 100%;
+    }
+    .hero .greet{
+        font-size: 1rem;
+        font-weight: 600;
+        color: #19A7CE;
+    }
+    
+    .hero .title{
+        text-transform: capitalize;
+        font-size: 4rem;
+        font-weight: 600;
+        color: #EEEEEE;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    .hero .sub-title{
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #EEEEEE;
+        text-align: left;
+    }
+    
+    .socials ul{
+        gap: 1rem;
+    }
+    
+     .socials ul li a .fa{
+         font-size: 1.1rem;
+         text-align: center;
+         height: 35px;
+         width: 35px;
+         background:#EEEEEE;
+         color: #27374D;
+         border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         transition: all 0.3s 100ms;
+     }
+    
+    .circle{
+        height: 350px;
+        width: 350px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .circle{
+        display: none;
+    }
+}
+
+
+
+
+
+@media (min-width: 769px){
+    .home-container, .about-container, .profile-container{
+        padding: 2rem 5rem;
+    }
+    .about-content{
+        padding: 4rem 0;
+    }
+
+    .profile-content{
+        padding: 4rem 0;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .home-container, .about-container, .profile-container{
+        padding: 2rem 8rem;
+    }
+
+    .about-content{
+        padding: 5rem 0;
+    }
+
+    .profile-content{
+        padding: 3rem 0;
+    }
+}

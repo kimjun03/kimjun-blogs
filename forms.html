@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Login System</title>
+  <style>
+    .register-form, .login-form {
+      display: none;
+    }
+  </style>
+  <script>
+    function showRegisterForm() {
+      document.getElementById('register-form').style.display = 'block';
+      document.getElementById('login-form').style.display = 'none';
+    }
+
+    function showLoginForm() {
+      document.getElementById('login-form').style.display = 'block';
+      document.getElementById('register-form').style.display = 'none';
+    }
+
+    function register() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      // Store the information in localStorage (not secure)
+      localStorage.setItem('username', username);
+      localStorage.setItem('password', password);
+
+      alert('Registration successful!');
+    }
+
+    function login() {
+      var enteredUsername = document.getElementById('enteredUsername').value;
+      var enteredPassword = document.getElementById('enteredPassword').value;
+
+      // Retrieve information from localStorage (not secure)
+      var storedUsername = localStorage.getItem('username');
+      var storedPassword = localStorage.getItem('password');
+
+      if (enteredUsername === storedUsername && enteredPassword === storedPassword) {
+        window.location.href = "index.html";
+        alert('Login successful!');
+        // Redirect to another page or perform other actions
+      } else {
+        alert('Invalid username or password.');
+      }
+    }
+  </script>
+</head>
+<body>
+    <div class="text">
+        <button onclick="showRegisterForm()">Register</button>
+        <button onclick="showLoginForm()">Login</button>
+    </div>
+  <div class="register-form" id="register-form">
+    <h2>Register</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <br>
+    <button onclick="register()">Register</button>
+  </div>
+
+  <div class="login-form" id="login-form">
+    <h2>Login</h2>
+    <label for="enteredUsername">Username:</label>
+    <input type="text" id="enteredUsername" required>
+    <br>
+    <label for="enteredPassword">Password:</label>
+    <input type="password" id="enteredPassword" required>
+    <br>
+    <button onclick="login()">Login</button>
+  </div>
+</body>
+<style>
+
+
+
+body{
+    background: #27374D;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.register-form, .login-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 40px;
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px; 
+    background-color: rgba(255, 255, 255, 0.10); 
+}
+
+
+h2{ 
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #DDE6ED;
+    margin-bottom: 50px;
+}
+
+input{
+    position: relative;
+    display: block;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #DDE6ED;
+    background: transparent;
+    color: #DDE6ED;
+    outline: none;
+    margin: 5px auto;   
+}
+
+label{
+    font-size: 1rem;
+    font-weight:lighter;
+    text-transform: capitalize;
+    color: #DDE6ED;
+}
+
+button{
+    padding: 7px 25px;
+}
+
+.text{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+</style>
+</html>

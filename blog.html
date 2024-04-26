@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+<script type="text/javascript">
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector(".header");
+        header.classList.toggle("sticky", window.scrollY > 0)
+    })
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navbar = document.getElementById('navbar');
+
+        burgerMenu.addEventListener('click', function () {
+            navbar.querySelector('ul').classList.toggle('show');
+        });
+    });
+
+</script>
+
+<body>
+    <section id="home-page">
+        <div class="home-container">
+            <div class="header">
+                <div class="burger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <h1 class="logo">MyWebsite</h1>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="forms.html">Log out</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="home-content">
+                <div class="blog-1">
+                    <img src="download.jpg" alt="" class="image">
+                    <div class="blog-1-text">
+                        <a href="Blog-1.html" class="title">Travel Blog</a>
+                        <p class="paragraph">Welcome everyone, on this Travel Adventures! Embark on a journey with me as
+                            I explore the world and share captivating stories, insightful travel tips, and breathtaking
+                            photographs. From hidden gems to popular destinations, my blog covers it all, offering
+                            inspiration for your next adventure and practical advice to enhance your travel experience.
+                            Join me as we wanderlust together and discover the wonders of our beautiful planet.</p>
+                    </div>
+                </div>
+                <div class="blog-2">
+                    <img src="download.jpg" alt="" class="image">
+                    <div class="blog-2-text">
+                        <a href="blog-2.html" class="title">personal blog</a>
+                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error provident
+                            beatae qui ducimus. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section id="about-page">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1 class="title">about me.</h1>
+                    <p class="sub-title">I'm a first year BSIT student from Capitol University.</p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, totam ex!
+                        Voluptates et provident, dicta ullam vel recusandae architecto eius quidem, tenetur iure
+                        laborum. Autem placeat doloribus facilis magnam suscipit?</p>
+
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, totam ex!
+                        Voluptates et provident, dicta ullam vel recusandae architecto eius quidem, tenetur iure
+                        laborum. Autem placeat doloribus facilis magnam suscipit?</p>
+                </div>
+                <div class="about-image">
+                    <div class="square">
+                        <img src="thinking.avif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="profile-page">
+        <div class="profile-container">
+            <div class="profile-text">
+                <h1>profile</h1>
+            </div>
+            <div class="profile">
+                <div class="image">
+                    <img src="skolboi.jpg" alt="profile">
+                </div>
+                <div class="profile-details">
+                    <h4>Greetings Everyone, i am</h4>
+                    <h1>mark <br> lloyd</h1>
+                    <h3>An aspiring web developer.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia asperiores nulla ipsam laborum
+                        sapiente ratione cumque voluptates incidunt excepturi tenetur earum placeat quis tempore, beatae
+                        dolorum. Earum quibusdam delectus animi. Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Amet libero mollitia laborum, impedit est quibusdam earum numquam reiciendis beatae vitae
+                        quod tempora repellat expedita deleniti eos hic omnis praesentium explicabo?</p>
+                    <div class="profile-info">
+                        <h3><i class="fa fa-calendar"></i>21st march, 2003</h3>
+                        <h3><i class="fa fa-phone"></i>+6397-000-9169</h3>
+                        <h3><i class="fa fa-map-marker"></i>Location nimo bai.</h3>
+                        <h3><i class="fa fa-certificate"></i>Study at Capitol University</h3>
+                        <h3><i class="fa fa-book"></i>Bachelor Science in Information Technology.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section-->
+</body>
+
+</html>

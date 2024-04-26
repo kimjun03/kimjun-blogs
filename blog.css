@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background: #27374D;
+}
+
+#home-page{
+    height: 100%;
+}
+
+.home-container{
+    padding: 2rem 10rem;
+}
+
+/*.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header .logo{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #19A7CE;
+}
+.header ul{
+    display: flex;
+    gap: 4rem;
+}
+
+.header ul li{
+    list-style: none;
+}
+
+.header ul li a, .logout{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #19A7CE;
+}
+
+.header ul li a:hover, .logout{
+    color: #EEEEEE;
+}
+
+.navs ul li a, .logout{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #27374D;
+}
+
+.navs ul li a:hover, .logout{
+    color: #19A7CE;
+}*/
+.header{
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.header .logo{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #19A7CE;
+}
+
+.header i{
+    margin-right: 10px;
+}
+
+
+#navbar ul{
+    display: flex;
+    gap: 4rem;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a, .logout{
+    position: relative;
+   font-weight: 300;
+   font-size: 0.9rem;
+   text-decoration: none;
+   color: #19A7CE;
+   letter-spacing: 1px;
+   transition: 0.5s ease;
+   text-transform: uppercase;
+}
+#navbar ul li a:hover{
+    color: #EEEEEE;
+}
+
+#navbar ul li a .active{
+    color: #EEEEEE;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #19A7CE;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    #home-page{
+        height: 100vh;
+    }
+    
+    .home-container{
+        padding: 2rem;
+    }
+    .burger-menu {
+        display: flex;
+        z-index: 1;
+
+    }
+
+    .logo{
+        display: none;
+    }
+
+    #navbar ul {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(2, 36, 60, 0.8);
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #navbar ul.show {
+        display: flex;
+    }
+
+    #navbar ul li {
+        margin-bottom: 10px;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+    .home-container{
+        padding: 3rem 2rem;
+    }
+
+    .burger-menu {
+        display: flex;
+        z-index: 1;
+
+    }
+
+    .logo{
+        display: none;
+    }
+
+    #navbar ul {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(2, 36, 60, 0.8);
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #navbar ul.show {
+        display: flex;
+    }
+
+    #navbar ul li {
+        margin-bottom: 10px;
+    }
+
+}
+
+.home-content{
+    margin: 10rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    height: 100%;
+}
+
+.blog-1, .blog-2{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: normal;
+    gap: 1rem;
+    width: 80%;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+.image{
+    width: 100%;
+}
+
+.blog-1-text{
+    margin-top: auto;
+}
+
+.title{
+    text-decoration: none;
+    color: #19A7CE;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.paragraph{
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #EEEEEE;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 768px){
+    .home-content{
+        margin: 0 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .blog-1, .blog-2{
+        width: 100%;
+    }
+    
+
+    .title{
+        font-size: 1rem;
+    }
+    
+    .paragraph{
+        margin-top: 0.8rem;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .home-content{
+        margin: 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
